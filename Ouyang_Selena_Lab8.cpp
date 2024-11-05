@@ -1,66 +1,65 @@
 //Selena Ouyang
-//Lab 8 
+//Lab 8
 //11-2-24
 
 #include<iostream>
 #include<cmath>
 using namespace std;
 
-//Part 2
+//Part 2 Function Definition
 int doubleMultiply(int a, int b)
 {
-    int product; //variable to hold the product 
-    product = a * b * 2; 
-    return product;
+	int product; //variable to hold the product
+	product = a * b * 2;
+	return product;
 }
-//Part 3
-double getSum(double a, double b, double c)
-{
-    double result;
-    result = a + b + c; 
-    return result;
-}
+
 int main ()
 {
-    //Part 1
-    cout << "Part 1" << endl; //organization
-    
-    double number; //variable to hold the number
-    
-    cout << "Enter a floating point number: ";
-    cin >> number; //user assigned value for the number
-    
-    cout << "The square root of " << number << " is " 
-    << sqrt(number) << endl; //a) square root of the number
-    cout << number << " raised to the 4th power is " 
-    << pow(number, 4) << endl; //b) number raised to the 4th power
-    cout << "The floor of " << number << " is " 
-    << floor(number) << endl << endl; //c) floor of the number
-    
-    //Part 2
-    cout << "Part 2" << endl; //organization
-    
-    /*The program asks for two integers from the user and 
-    multiplies those two numbers together to get the product. 
-    Then it multiples the product by two and prints out that value. */
-    
-    int num1, num2; //variables to store the numbers 
-    cout << "Enter two integers: ";
-    cin >> num1 >> num2; //User assigned values to the two numbers
-    cout << "Twice the product of the number is: "
-    << doubleMultiply(num1, num2) << endl << endl; //Finds twice the value of the product
-    
-    //Part 3
-    cout << "Part 3" << endl; //organization
-    
-    double float1, float2, float3; // variable to hold the three numbers
-    cout << "Enter three floating point numbers: ";
-    cin >> float1 >> float2 >> float3; //user assigned values to the three numbers
-    cout << "The sum is: "
-    << getSum(float1, float2, float3) << endl; //gets the sum of all three numbers
+	//Part 1
+	cout << "Part 1" << endl; //organization
 
-    return 0;
+	double number; //variable to hold the number
+
+	cout << "Enter a floating point number: ";
+	cin >> number; //user assigned value for the number
+
+	cout << "The square root of " << number << " is "
+	     << sqrt(number) << endl; //a) square root of the number
+	cout << number << " raised to the 4th power is "
+	     << pow(number, 4) << endl; //b) number raised to the 4th power
+	cout << "The floor of " << number << " is "
+	     << floor(number) << endl << endl; //c) floor of the number
+
+	//Part 2
+	cout << "Part 2" << endl; //organization
+
+	/*The program asks for two integers from the user and
+	multiplies those two numbers together to get the product.
+	Then it multiples the product by two and prints out that value. */
+
+	int num1, num2; //variables to store the numbers
+	cout << "Enter two integers: ";
+	cin >> num1 >> num2; //User assigned values to the two numbers
+	cout << "Twice the product of the number is: "
+	     << doubleMultiply(num1, num2) << endl << endl; //Finds twice the value of the product
+
+	//Part 3
+	double getSum(double a, double b, double c); //function declaration
+
+	double double1, double2, double3; //declaring variables
+	cout << "Enter three floating point numbers: ";   // Get input from the user
+	cin >> double1 >> double2 >> double3;
+	double result = getSum(double1, double2, double3); //Function call
+	cout << "The sum of the numbers is: " << result << endl;
+	return 0;
 }
+
+//Part 3 Function Definition
+double getSum(double a, double b, double c) {
+	return a + b + c;
+}
+
 
 /*
 Part 1
