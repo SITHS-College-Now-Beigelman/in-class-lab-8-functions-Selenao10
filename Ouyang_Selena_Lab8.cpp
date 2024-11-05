@@ -45,13 +45,15 @@ int main ()
 	     << doubleMultiply(num1, num2) << endl << endl; //Finds twice the value of the product
 
 	//Part 3
+	cout << "Part 3" << endl; //organization
+	
 	double getSum(double a, double b, double c); //function declaration
-
 	double double1, double2, double3; //declaring variables
 	cout << "Enter three floating point numbers: ";   // Get input from the user
 	cin >> double1 >> double2 >> double3;
 	double result = getSum(double1, double2, double3); //Function call
 	cout << "The sum of the numbers is: " << result << endl;
+	
 	return 0;
 }
 
