@@ -14,6 +14,11 @@ int doubleMultiply(int a, int b)
 	return product;
 }
 
+//Part 3 Function Definition
+double getSum(double a, double b, double c) {
+	return a + b + c;
+}
+
 int main ()
 {
 	//Part 1
@@ -47,7 +52,6 @@ int main ()
 	//Part 3
 	cout << "Part 3" << endl; //organization
 	
-	double getSum(double a, double b, double c); //function declaration
 	double double1, double2, double3; //declaring variables
 	cout << "Enter three floating point numbers: ";   // Get input from the user
 	cin >> double1 >> double2 >> double3;
@@ -57,10 +61,6 @@ int main ()
 	return 0;
 }
 
-//Part 3 Function Definition
-double getSum(double a, double b, double c) {
-	return a + b + c;
-}
 
 
 /*
